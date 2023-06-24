@@ -1,0 +1,29 @@
+@import "../../variables.modules";
+.gradientColor {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  }
+  .hand {
+    animation-name: wave;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    @media only screen and (min-width: 940px) {
+      font-size: 3rem;
+      text-align: left;
+    }
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+    text-align: center;
+    @media only screen and (min-width: 940px) {
+      font-size: 2rem;
+      text-align: left;
+    }
+  }

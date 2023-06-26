@@ -2,6 +2,7 @@ import {Box, Grid} from "@mui/material";
 import Navbar from "../components/home/NavBar/Navbar";
 import {Route, Routes} from "react-router-dom";
 import Home from "../components/home/home";
+
 const BaseLayout = ()=>{
     return (
         <Box>

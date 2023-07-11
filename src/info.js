@@ -53,7 +53,7 @@ export const info = {
 
 
     ],
-    bio: "Hello! I'm Kavery. I'm a Frontend Developer. I completed Master's in VTU,India. I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    bio: "Hello! I'm Kavery. I'm a Frontend Developer. I completed Master's in VTU,India. I enjoy long walks on the beach,cycling in the woods and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
     skills:
         {
             proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma','Angular','React native'],

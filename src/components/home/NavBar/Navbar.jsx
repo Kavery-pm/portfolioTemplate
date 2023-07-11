@@ -19,6 +19,11 @@ const Navbar = ()=>{
             to: '/aboutme',
             active: 'about'
         },
+        {
+            name:'projects',
+            to:'/projects',
+            active:'projects'
+        }
       
     ]
 return (

@@ -3,6 +3,7 @@ import Navbar from "../components/home/NavBar/Navbar";
 import {Route, Routes} from "react-router-dom";
 import Home from "../components/home/home";
 import AboutMe from "../components/AboutMe/aboutMe";
+import Project from "../components/projects/project";
 
 const BaseLayout = ()=>{
     return (
@@ -16,7 +17,7 @@ const BaseLayout = ()=>{
                <Routes>
                   <Route exact path={'/'} element={<Home/>}/>
                   <Route exact path={'/aboutme'} element={<AboutMe/>}/>
-                  
+                  <Route exact path={'/projects'} element={<Project/>}/>
                </Routes>
             </Grid>
             <Grid item>

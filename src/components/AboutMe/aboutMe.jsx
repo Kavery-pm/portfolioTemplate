@@ -3,6 +3,7 @@ import Terminal from "./Terminal";
 import { info } from "../../info";
 import Style from "./Aboutme.module.scss";
 import MySkills from "./mySkills";
+import Hobbies from "./hobbies";
 const AboutMe = () => {
   const aboutMeText = () => {
     return (
@@ -34,6 +35,7 @@ const AboutMe = () => {
     >
       <Terminal text={aboutMeText()} />
       <Terminal text={<MySkills/>}/>
+      <Terminal text={<Hobbies/>}/>
     </Box>
   );
 };

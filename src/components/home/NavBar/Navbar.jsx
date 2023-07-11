@@ -14,7 +14,11 @@ const Navbar = ()=>{
             to: '/',
             active: 'home'
         },
-       
+        {
+            name: 'About Me',
+            to: '/aboutme',
+            active: 'about'
+        },
       
     ]
 return (
@@ -27,7 +31,7 @@ return (
                 {links.map((link, index) => (
                     <Box key={index} component={'li'} 
                     sx={{borderImageSource:  `linear-gradient(135deg, ${colors})`}}  className={(link.active === active && !link.type) && Style.active}>
-                             <Link to={link.to}  className={Style.link}>
+                             <Link to={link.to} onClick={() => setActive(link.active)} className={Style.link}>
                             {!link.type && <p style={{padding: '0.5rem 0'}}>{link.name}</p>}
                             {link.type && <h1>{link.name}</h1>}
                         </Link>

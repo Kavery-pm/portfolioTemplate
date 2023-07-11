@@ -2,6 +2,7 @@ import {Box, Grid} from "@mui/material";
 import Navbar from "../components/home/NavBar/Navbar";
 import {Route, Routes} from "react-router-dom";
 import Home from "../components/home/home";
+import AboutMe from "../components/AboutMe/aboutMe";
 
 const BaseLayout = ()=>{
     return (
@@ -14,6 +15,7 @@ const BaseLayout = ()=>{
             <Grid item flexGrow={1}>
                <Routes>
                   <Route exact path={'/'} element={<Home/>}/>
+                  <Route exact path={'/aboutme'} element={<AboutMe/>}/>
                   
                </Routes>
             </Grid>

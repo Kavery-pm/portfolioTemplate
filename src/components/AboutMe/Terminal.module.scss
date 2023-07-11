@@ -1,0 +1,17 @@
+@import '../../variables.modules.scss';
+
+i {
+    padding-left: 0.5rem;
+  
+    &.red {
+      color: $red;
+    }
+  
+    &.amber {
+      color: $yellow;
+    }
+  
+    &.green {
+      color: $green;
+    }
+  }

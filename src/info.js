@@ -1,3 +1,6 @@
+
+import FoodApp from '../src/assets/projectImage/FoodApp.png'
+import FilterCountry from '../src/assets/projectImage/FilterCountry.png';
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 
 export const info = {
@@ -79,6 +82,20 @@ export const info = {
         }
 
     ],
-    
+    portfolio: [ 
+    {
+        title: "Project 1",
+        live: "https://country-filter.vercel.app/", 
+        source: "https://github.com/Kavery-pm/CountryFilter", 
+        image: FilterCountry
+    },
+    {
+        title: "Project 2",
+        live: "https://musical-alfajores-e260c2.netlify.app/",
+        source: "https://github.com/Kavery-pm/ReactFoodOrderApp",
+        image: FoodApp
+    },
+   
+]
     
 }

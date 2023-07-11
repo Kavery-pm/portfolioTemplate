@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import Terminal from "./Terminal";
 import { info } from "../../info";
 import Style from "./Aboutme.module.scss";
+import MySkills from "./mySkills";
 const AboutMe = () => {
   const aboutMeText = () => {
     return (
@@ -22,6 +23,8 @@ const AboutMe = () => {
       </>
     );
   };
+ 
+
   return (
     <Box
       display={"flex"}
@@ -30,6 +33,7 @@ const AboutMe = () => {
       mt={"3rem"}
     >
       <Terminal text={aboutMeText()} />
+      <Terminal text={<MySkills/>}/>
     </Box>
   );
 };

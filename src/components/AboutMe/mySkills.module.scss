@@ -1,0 +1,28 @@
+@import '../../variables.modules.scss';
+.green{
+    color:$green
+}
+.skills {
+    columns: 2;
+    @media only screen and (min-width: 940px) {
+      columns: 2;
+    }
+  
+    li {
+      margin: 0;
+      line-height: 1.75;
+   
+    }
+    // .column1 {
+    //     column-count: 2;
+    //     column-gap: 1rem;
+    //     background-color: red !important;
+    //   }
+      
+    //   .column2 {
+    //     column-count: 2;
+    //     column-gap: 1rem;
+    //     break-inside: avoid-column;
+    //   }
+  }
+ 

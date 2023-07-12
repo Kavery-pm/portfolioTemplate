@@ -1,5 +1,5 @@
 import {Box} from "@mui/material";
-import Style from './Home.module.scss';
+import Style from './home.module.scss';
 import classNames from 'classnames';
 import { info } from "../../info";
 import EmojiBullet from "./EmojiBullet.jsx";

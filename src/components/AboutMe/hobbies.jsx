@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import { info } from "../../info"
-import Style from './AboutMe.module.scss';
+import Style from './Aboutme.module.scss';
 
 const Hobbies = ()=>{
 return (

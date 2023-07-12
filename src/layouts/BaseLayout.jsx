@@ -4,10 +4,10 @@ import {Route, Routes} from "react-router-dom";
 import Home from "../components/home/home";
 import AboutMe from "../components/AboutMe/aboutMe";
 import Project from "../components/projects/project";
-
+import Style from './BaseLayout.module.scss'
 const BaseLayout = ()=>{
     return (
-        <Box>
+        <Box className={Style.dark} >
              <Grid container display={'flex'} flexDirection={'column'} minHeight={'100vh'}
                justifyContent={'space-between'}>
             <Grid item>

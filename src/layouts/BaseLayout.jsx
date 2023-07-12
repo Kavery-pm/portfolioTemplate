@@ -5,13 +5,14 @@ import Home from "../components/home/home";
 import AboutMe from "../components/AboutMe/aboutMe";
 import Project from "../components/projects/project";
 import Style from './BaseLayout.module.scss'
+import Toggler from "../components/home/Toggler";
 const BaseLayout = ()=>{
     return (
         <Box className={Style.dark} >
              <Grid container display={'flex'} flexDirection={'column'} minHeight={'100vh'}
                justifyContent={'space-between'}>
-            <Grid item>
-             <Navbar/>
+          <Grid item>
+              <Toggler/>
             </Grid>
             <Grid item flexGrow={1}>
                <Routes>

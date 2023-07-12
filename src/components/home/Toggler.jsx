@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
 import { Box } from "@mui/material";
 
-const Toggler = ()=>{
+const Toggler = ({darkMode,handleClick})=>{
 return (
     <Box fontSize={'1.5 rem'}>
- <span  aria-label="Full Moon" role="img">🌕</span>
- <span  aria-label="New Moon" role="img">🌑</span>
+        {darkMode ?  (<span onClick={handleClick} aria-label="Full Moon" role="img">🌕</span>):
+ 
+ (<span onClick={handleClick}  aria-label="New Moon" role="img">🌑</span>)}
     </Box>
 )
 }

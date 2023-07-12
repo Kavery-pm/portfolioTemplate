@@ -6,13 +6,31 @@ import AboutMe from "../components/AboutMe/aboutMe";
 import Project from "../components/projects/project";
 import Style from './BaseLayout.module.scss'
 import Toggler from "../components/home/Toggler";
+import { useState } from "react";
+import { useEffect } from "react";
 const BaseLayout = ()=>{
+const [darkMode, setdarkMode] = useState(true);
+useEffect(() => {
+   let detectedDarkMode = eval(localStorage.getItem('darkMode'));
+   console.log(detectedDarkMode);
+   if (detectedDarkMode) {
+      setdarkMode(detectedDarkMode)
+   } else {
+      localStorage.setItem('darkMode', 'false')
+   }
+}, [])
+
+const handleToggleDarkMode=()=> {
+   let oppositeOfCurrentDarkMode = !darkMode
+   localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`)
+   setdarkMode(oppositeOfCurrentDarkMode)
+}
     return (
-        <Box className={Style.dark} >
+        <Box className={darkMode ? Style.dark : Style.light} >
              <Grid container display={'flex'} flexDirection={'column'} minHeight={'100vh'}
                justifyContent={'space-between'}>
           <Grid item>
-              <Toggler/>
+             <Navbar darkMode={darkMode} handleClick={handleToggleDarkMode}/>
             </Grid>
             <Grid item flexGrow={1}>
                <Routes>

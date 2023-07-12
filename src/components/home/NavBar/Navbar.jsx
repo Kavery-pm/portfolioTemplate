@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
 import {Box} from "@mui/material";
 import Style from './Navbar.module.scss';
 import {Link,useLocation} from "react-router-dom";
 import { useState } from "react";
+import Toggler from "../Toggler";
 let colors = [" rgb(131,58,180),rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%"];
-const Navbar = ()=>{
+const Navbar = ({darkMode,handleClick})=>{
     const location = useLocation();
     console.log(location.pathname)
    
@@ -43,7 +45,9 @@ return (
                        
                     </Box>
                 ))}
-               
+                <li>
+                    <Toggler darkMode={darkMode} handleClick={handleClick}/>
+                </li>
             </Box>
         </Box>
     

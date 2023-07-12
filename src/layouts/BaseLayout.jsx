@@ -5,7 +5,6 @@ import Home from "../components/home/home";
 import AboutMe from "../components/AboutMe/aboutMe";
 import Project from "../components/projects/project";
 import Style from './BaseLayout.module.scss'
-import Toggler from "../components/home/Toggler";
 import { useState } from "react";
 import { useEffect } from "react";
 const BaseLayout = ()=>{
